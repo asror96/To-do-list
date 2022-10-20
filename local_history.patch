@@ -1,0 +1,17 @@
+Index: routes/send.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/routes/send.php b/routes/send.php
+--- a/routes/send.php	
++++ b/routes/send.php	(date 1650191763457)
+@@ -9,7 +9,7 @@
+ 
+ $channel->queue_declare('hello', false, false, false, false);
+ 
+-$msg = new AMQPMessage('delete/40');
++$msg = new AMQPMessage('gey');
+ $channel->basic_publish($msg, '', 'hello');
+ 
+ echo " [x] Sent 'Hello World!'\n";
